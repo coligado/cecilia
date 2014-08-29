@@ -2,43 +2,26 @@
 #include <fstream>
 #include <cstring>
 
-const int MAX_CHARS_PER_LINE = 512;
+const int MAX_CHARS_PER_LINE = 50;
 const char* const DELIMITER = " ";
 
-int main()
-{
+int main() {
   ifstream fin;
   fin.open("name_translations.txt");
   if (!fin.good()) // good?
     return 1;
 
-  // read each line of the file
-  while (!fin.eof())
-  {
-    // read an entire line into memory
+  while (!fin.eof()) {
     char buf[MAX_CHARS_PER_LINE];
     fin.getline(buf, MAX_CHARS_PER_LINE);
-    
-    // parse the line into blank-delimited tokens
-    int n = 0; // a for-loop index
-    
-    // array to store memory addresses of the tokens in buf
-    const char* token[MAX_TOKENS_PER_LINE] = {}; // initialize to 0
-    
-    // parse the line
-    token[0] = strtok(buf, DELIMITER); // first token
-    if (token[0]) // zero if line is blank
-    {
-      for (n = 1; n < MAX_TOKENS_PER_LINE; n++)
-      {
-        token[n] = strtok(0, DELIMITER); // subsequent tokens
-        if (!token[n]) break; // no more tokens
-      }
+    int n = 0;
+    const char* first_name = strtok(buf, DELIMITER);
+    if (first_name) {
+      char last_letter = first_name - 1;
+      if (last_letter == 'A')
+        cout << first_name << endl;
     }
-
-    // process (print) the tokens
-    for (int i = 0; i < n; i++) // n = #of tokens
-      cout << "Token[" << i << "] = " << token[i] << endl;
+    cout << "ALL DONE!" << endl;
     cout << endl;
   }
 }
