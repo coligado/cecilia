@@ -11,4 +11,18 @@
 
 <div class="step_1">
   Step 1: Italianize your name!
+  <div class="select_gender">
+    First, select your gender:
+    <%= radio_button_tag(:gender, "female") %>
+    <%= label_tag(:gender_female, "femminile") %>
+    <%= radio_button_tag(:gender, "male") %>
+    <%= label_tag(:gender_male, "maschio") %>
+  </div>
+  <div class="enter_name">
+    <%= form_for(:name, method: :get, url: {:action => :italianize }) do |form| %>
+      First name: <%= form.text_field(:first_name) %>
+      Last name: <%= form.text_field(:last_name) %>
+      <%= form.submit "Dai!" %>
+    <% end %>
+  </div>
 </div>
