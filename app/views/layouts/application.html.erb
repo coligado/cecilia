@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'shared/header' unless @disable_header == false%>
+  <%= render 'shared/header' %>
   <%= yield %>
   <%= render 'shared/footer' %>
 </body>
