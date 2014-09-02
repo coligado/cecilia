@@ -7,7 +7,7 @@ const char* const DELIMITER = " ";
 
 int main() {
   ifstream fin;
-  fin.open("name_translations.txt");
+  fin.open("name_translations.txt");Ok
   if (!fin.good()) // good?
     return 1;
 
