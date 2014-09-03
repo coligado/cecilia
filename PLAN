@@ -1,32 +1,17 @@
 Plan
+
+Process:
 Enter gender: female
 Enter name: say, Lea
+
+Name data:
+1. Extract translated names and put into new file
+ex: "ALESSANDRA ALEXANDRA" => "ALEXANDRA: ALESSANDRA"
+2. Check that YAML syntax is correct
 
 1. Convert name to all upper case
 2. Take first two letters of given name
 3. Check the YAML file for the first two letters
-
-Most popular Italian last names (in order):
-Rossi
-Russo
-Ferrari
-Esposito
-Bianchi
-Romano
-Colombo
-Ricci
-Marino
-Greco
-Bruno
-Gallo
-Conti
-De Luca
-Mancini
-Costa
-Giordano
-Rizzo
-Lombardi
-Moretti
 
 features:
       email: &email
