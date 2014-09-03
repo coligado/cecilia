@@ -1,4 +1,6 @@
 class HomepageController < ApplicationController
+  # FEMALE_NAMES = YAML.load_file('config/female_names.yml')
+  
   def show_topics
   end
 
@@ -9,14 +11,14 @@ class HomepageController < ApplicationController
   	gender = params[:gender]
   	first_name = params[:name][:first_name]
     first_name.upcase
-    if first_name[-1,1] == 'A'
+    if gender = :gender_female
       # check if it's in the female YAML file
+      puts gender
     else
       # check if it's in the 
     end
-
-  	@last_name = params[:name][:last_name]
-    render :partial => "shared/italian_name"
+    last_name = params[:name][:last_name]
+  	render :partial => "shared/italian_name"
   end
 
   private
