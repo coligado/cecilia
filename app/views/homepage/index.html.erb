@@ -7,23 +7,22 @@
 <% end %>
 
 <h1>Cecilia</h1>
-<h2>la tua guida a imparare l'italiano</h2>
+<h2>il generatore ufficiale dei nomi italiani</h2>
 
 <div class="italianize_name">
   But first, let's italianize your name!
-  <div class="select_gender">
-    First, select your gender:
-    <%= radio_button_tag(:gender, "female") %>
-    <%= label_tag(:gender_female, "femminile") %>
-    <%= radio_button_tag(:gender, "male") %>
-    <%= label_tag(:gender_male, "maschio") %>
-  </div>
-  <div class="enter_name">
-    <%= form_for(:name, method: :get, url: {:action => :italianize }) do |form| %>
+  <%= form_for(:info, method: :get, url: {:action => :italianize }) do |form| %>
+    <div class="select_gender">
+      First, select your gender:
+      <%= radio_button_tag(:gender, "female") %>
+      <%= label_tag(:gender_female, "femminile") %>
+      <%= radio_button_tag(:gender, "male") %>
+      <%= label_tag(:gender_male, "maschio") %>
+    </div>
+    <div class="enter_name">
       First name: <%= form.text_field(:first_name) %>
       Last name: <%= form.text_field(:last_name) %>
-      <%= form.submit "Dai!" %>
-    <% end %>
-  </div>
+    </div>
+    <%= form.submit "Dai!" %>
+  <% end %>
 </div>
-
