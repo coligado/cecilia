@@ -1,67 +1,7 @@
 Plan
 
-Process:
-Enter gender: female
-Enter name: say, Lea
+1. Initialize an object of class Name in before filter
+2. Which validates that the entered gender and name are present
 
-Name data:
-1. Extract translated names and put into new file
-ex: "ALESSANDRA ALEXANDRA" => "ALEXANDRA: ALESSANDRA"
-2. Check that YAML syntax is correct
-
-1. Convert name to all upper case
-2. Take first two letters of given name
-3. Check the YAML file for the first two letters
-
-features:
-      email: &email
-        - "Full name"
-        - "Social Profiles"
-        - "Phone Number"
-        - "Photos & Videos"
-        - "Address"
-        - "Dating & Blogs"
-      username: *email
-      phone: &;phone
-        - "Full name"
-        - "Address"
-        - "Email address"
-        - "Month/Year of Birth"
-        - "Location History"
-        - "Relatives"
-      address:
-        - "Full name"
-        - "Phone Number"
-        - "Email Address"
-        - "Marital Status"
-        - "Relatives"
-        - "Location History"
-      name: &name
-        - "Full name"
-        - "Phone Number"
-        - "Email Address"
-        - "Address"
-        - "Location History"
-        - "Social Profiles"
-      historical:
-        - "Marriage Records"
-        - "US Census Records"
-        - "Divorce Records"
-        - "Military Service Records"
-        - "Birth Records"
-        - "Immigration Records"
-        - "Death Records"
-      court:
-        - "Nationwide Criminal Search"
-        - "State & Local Database Search"
-        - "Sex Offense Search"
-        - "Felony Conviction Check"
-        - "Misdemeanor Conviction Check"
-        - "Most Wanted List Search"
-      crim: *name
-      business: *name
-      default: *name
-      name_state_seo: *name
-      telemarketers: *phone
-
----
+Actually I kinda want to save names to see whose entered
+Have create / new controller methods 
