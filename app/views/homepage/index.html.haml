@@ -9,7 +9,7 @@
   .italianize_name
     = form_for :name, method: :get, url: {:action => :italianize } do |form|
       .select_gender
-        Gender:
+        = label_tag(:gender, "Gender:")
         = radio_button_tag(:gender, "female")
         = label_tag(:gender_female, "femminile")
         = radio_button_tag(:gender, "male")
