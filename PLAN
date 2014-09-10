@@ -1,0 +1,7 @@
+Plan
+
+1. Initialize an object of class Name in before filter
+2. Which validates that the entered gender and name are present
+
+Actually I kinda want to save names to see whose entered
+Have create / new controller methods 

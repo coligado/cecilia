@@ -1,9 +1,0 @@
-Italianize Your Name Plan
-
-Select gender
-Enter first and last name
-
-For first name:
-Take first two letters of name
-Check if it matches the full name (key)
-Match it to any name corresponding to those first two letters in the YAML file

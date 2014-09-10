@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root 'homepage#index'
   
   get 'homepage/show_topics'
+
   get 'homepage/italianize'
+
   get 'about' => 'homepage#about', as: 'about'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
