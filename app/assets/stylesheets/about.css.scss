@@ -1,0 +1,41 @@
+.about_background {
+  width                : 1100px;
+  height               : 710px;
+  margin               : 60px auto;
+  border-color         : gray;
+  border-style         : solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius   : 10px;
+  border-radius        : 10px;
+}
+
+.about_content {
+  width : 95%;
+  margin: 0 auto;
+}
+
+.about_1 {
+  background : url('about_1.jpg') no-repeat;
+  width      : 1020px;
+  height     : 183px;
+}
+
+.about_2 {
+  background : url('about_2.jpg') no-repeat;
+  width      : 1030px;
+  height     : 179px;
+}
+
+.about_3 {
+  background : url('about_3.jpg') no-repeat;
+  width      : 787px;
+  height     : 63px;
+  margin     : 0 auto;
+}
+
+.forcellami {
+  background : url('forcellami.jpg') no-repeat;
+  width      : 217px;
+  height     : 54px;
+  margin     : 50px auto;
+}
