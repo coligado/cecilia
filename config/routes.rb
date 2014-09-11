@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   get 'homepage/show_topics'
 
-  get 'search' => 'homepage#italianize'
+  get 'italianize' => 'homepage#italianize'
   get 'homepage/italianize'
 
   get 'about' => 'homepage#about', as: 'about'

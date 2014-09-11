@@ -8,3 +8,12 @@ body {
 h1 {
   text-align : center; 
 }
+
+.clearfix:after {
+  visibility : hidden; 
+  display    : block; 
+  font-size  : 0; 
+  content    : " "; 
+  clear      : both; 
+  height     : 0;
+}

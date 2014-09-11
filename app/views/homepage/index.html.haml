@@ -7,16 +7,17 @@
     .main_title cecilia
     .subtitle il generatore ufficiale dei nomi italiani
     .italianize_name
-      = form_for :info, method: :get, url: {:action => :italianize } do
-        .select_gender
-          = label_tag(:gender, "Io sono:")
-          = radio_button_tag(:gender, "female")
-          = label_tag(:gender_female, "femmina")
-          = radio_button_tag(:gender, "male")
-          = label_tag(:gender_male, "maschio")
-          = radio_button_tag(:gender, "other")
-          = label_tag(:gender_other, "altro")
-        .name_search_bar
-          %input.name_box{ id: :first_name, type: "text", required: true, placeholder: "first name"}
-          %input.name_box{ id: :last_name, type: "text", required: true, placeholder: "last name" }
-        = submit_tag "Dai!", class: "search_button"
+      .select_gender
+        = label_tag(:gender, "Io sono:")
+        = radio_button_tag(:gender, "female")
+        = label_tag(:gender_female, "femmina")
+        = radio_button_tag(:gender, "male")
+        = label_tag(:gender_male, "maschio")
+        = radio_button_tag(:gender, "other")
+        = label_tag(:gender_other, "altro")
+      .name_search_bar
+        %input.name_box{ id: :first_name, name: :first_name, type: "text", required: true, placeholder: "first name"}
+        %input.name_box{ id: :last_name, name: :last_name, type: "text", required: true, placeholder: "last name" }
+      #dai_button.search_button Dai!
+
+.results

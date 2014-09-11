@@ -15,15 +15,13 @@ class HomepageController < ApplicationController
   # need to validate existence of form fields
   def italianize
     if @gender == "female"
-      puts "FEMALE MOTHA FUCKA"
       @italian_name = TRANSLATED_FEMALE_NAMES[@first_name] || FEMALE_NAMES[@first_name[0,1]].sample
     else
-      puts "MALE MOTHA FUCKA"
       @italian_name = TRANSLATED_MALE_NAMES[@first_name] || @italian_name = MALE_NAMES[@first_name[0,1]].sample
     end
     
     @italian_name.capitalize!
-    @italian_name = @italian_name + " " + SURNAMES[last_name[0,1]].sample.capitalize
+    @italian_name = @italian_name + " " + SURNAMES[@last_name[0,1]].sample.capitalize
     
     render :partial => "shared/italian_name"
   end
@@ -32,9 +30,9 @@ class HomepageController < ApplicationController
   
   def validate_gender_and_name
     @gender = params[:gender]
-    @first_name = params[:info][:first_name]
+    @first_name = params[:first_name]
     @first_name.upcase!
-    @last_name = params[:info][:last_name]
+    @last_name = params[:last_name]
     @last_name.upcase!
     # @name = Name.new(
     #   params[:gender],
