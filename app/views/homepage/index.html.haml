@@ -2,6 +2,13 @@
   Ceclia
 - content_for :meta do
   %meta{:content => "Cecilia is a tool for learning Italian.", :name => "description"}/
+- content_for :shadow do
+  .shadow_box.hide
+    .shadow_box_window
+      .loading.clearfix
+        .loading_gif
+      .results.clearfix
+
 .search_background
   .search_content
     .main_title cecilia
@@ -16,8 +23,8 @@
         = radio_button_tag(:gender, "other")
         = label_tag(:gender_other, "altro")
       .name_search_bar
-        %input.name_box{ id: :first_name, name: :first_name, type: "text", required: true, placeholder: "first name"}
-        %input.name_box{ id: :last_name, name: :last_name, type: "text", required: true, placeholder: "last name" }
+        %input.name_box{ id: :first_name, name: :first_name, type: "text", placeholder: "first name" }
+        %input.name_box{ id: :last_name, name: :last_name, type: "text", placeholder: "last name" }
       #dai_button.search_button Dai!
 .footer 
   .copyright Copyright © 2014 Lea Coligado&nbsp;&nbsp;|&nbsp;&nbsp;All photography by Lea Coligado

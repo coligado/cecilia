@@ -1,0 +1,24 @@
+.lightbox_header
+.full_profile_block.clearfix
+  .profile_picture_block
+    .profile_picture
+  .profile_data
+    .result_field
+      %span.profile_subtitle Carrier:
+      = params[:carrier]
+    .result_field
+      %span.profile_subtitle Type:
+      = params[:phone_type]
+    .result_field
+      %span.profile_subtitle Location:
+      - if params[:city]
+        = params[:city]
+        , #{params[:state]}
+      - else
+        See Results
+    .result_field
+      %span.profile_subtitle Owner Name:
+      See Results
+    .result_field
+      %span.profile_subtitle Owner Address:
+      See Results
