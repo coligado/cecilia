@@ -17,3 +17,16 @@ h1 {
   clear      : both; 
   height     : 0;
 }
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+input[type="text"] {
+  font-family: $sans;
+}
+
+a {
+  text-decoration: none;
+}
