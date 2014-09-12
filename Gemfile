@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 gem 'better_errors'
 
 gem 'haml-rails'
+
+gem 'rails_12factor', group: :production
