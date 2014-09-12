@@ -1,8 +1,15 @@
 @import 'variables';
 
 body {
-  font-family: $pac;
-  cursor     : default;
+  font-family             : $pac;
+  cursor                  : default;
+  background-repeat       : no-repeat;
+  background-attachment   : fixed;
+  background-position     : center center; 
+  -webkit-background-size : cover;
+  -moz-background-size    : cover;
+  -o-background-size      : cover;
+  background-size         : cover;
 }
 
 h1 {
@@ -24,7 +31,11 @@ input:focus::-moz-placeholder { color:transparent; }
 input:focus:-ms-input-placeholder { color:transparent; }
 
 input[type="text"] {
-  font-family: $sans;
+  font-family: $serif;
+}
+
+label {
+  cursor: pointer;
 }
 
 a {

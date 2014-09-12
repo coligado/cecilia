@@ -16,11 +16,13 @@
   width                : 555px;
   height               : 260px;
   margin               : 60px auto;
-  border-color         : gray;
+  background-color     : white;
+  border-color         : black;
   border-style         : solid;
   -webkit-border-radius: 10px;
   -moz-border-radius   : 10px;
   border-radius        : 10px;
+  z-index              : 1;
 }
 
 .search_content {
@@ -37,14 +39,14 @@ form {
 }
 
 .select_gender {
-  font-family: $sans;
+  font-family: $serif;
   font-size  : 24px;
   width      : 75%;
   margin     : 12px auto;
 }
 
 .name_search_bar {
-  font-family          : $sans;
+  font-family          : $serif;
   font-size            : 24px;
   width                : 90%;
   height               : 40px;
