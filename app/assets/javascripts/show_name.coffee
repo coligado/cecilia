@@ -20,12 +20,6 @@ $ ->
       $('.results').html response
       $('.results').fadeIn
 
-# card_id         = ""
-# area_code       = ""
-# exchange_code   = ""
-# subscriber_code = ""
-# simulate_load   = ""
-
 # # This function simply directs the number to be validated
 # # in searchNumber, depending on whether the lightbox is 
 # $ ->

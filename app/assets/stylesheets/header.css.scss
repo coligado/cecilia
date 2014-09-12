@@ -1,0 +1,21 @@
+@import 'variables';
+
+.header_bar {
+  background-color : rgba(0,0,0,0.5);
+  height           : 35px;
+  width            : 100%;
+  clear            : both;
+}
+
+.header_links {
+  width       : 120px;
+  float       : right;
+  font-size   : 15px;
+  margin-right: 8px;
+}
+
+.hdr_link {
+  display   : inline-block;
+  color     : white;
+  padding   : 3px 10px;
+}

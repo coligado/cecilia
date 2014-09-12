@@ -1,6 +1,8 @@
 @import 'variables';
 
 body {
+  width                   : 100%;
+  margin                  : 0;
   font-family             : $pac;
   cursor                  : default;
   background-repeat       : no-repeat;
