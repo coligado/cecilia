@@ -1,4 +1,4 @@
-images         = ['duomo.jpg', 'pantheon.jpg', 'trevi.jpg', 'firenze.jpg', 'manarola.jpg', 'ponte_vecchio.jpg', 'toscani_1.jpg', 'toscani_2.jpg', 'toscani_3.jpg', 'vernazza.jpg']
+images         = ['duomo.jpg', 'pantheon.jpg', 'trevi.jpg', 'firenze.jpg', 'manarola.jpg', 'toscani_1.jpg', 'toscani_2.jpg', 'toscani_3.jpg', 'vernazza.jpg']
 selectedGender = ""
 simulate_load  = ""
 
@@ -67,7 +67,6 @@ closeNameBox = ->
 clearSearch = (invalidNumber) ->
   clearTimeout simulate_load
   $('.results').hide()
-  if invalidNumber
-    $('#first_name').val("")
-    $('#first_name').focus()
-    $('#last_name').val("")
+  $('#first_name').val("")
+  $('#first_name').focus()
+  $('#last_name').val("")

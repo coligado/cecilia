@@ -2,7 +2,7 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  database: ashwin
+  database: coligado
   encoding: utf8
   username:
   password: 

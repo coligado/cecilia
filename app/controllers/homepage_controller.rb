@@ -1,33 +1,22 @@
 class HomepageController < ApplicationController
   FEMALE_NAMES = YAML.load_file('config/name_data/sorted_female_names.yml')
   MALE_NAMES = YAML.load_file('config/name_data/sorted_male_names.yml')
-  SURNAMES = YAML.load_file('config/name_data/sorted_surnames.yml')
   TRANSLATED_FEMALE_NAMES = YAML.load_file('config/name_data/translated_female_names.yml')
   TRANSLATED_MALE_NAMES = YAML.load_file('config/name_data/translated_male_names.yml')
   before_filter :validate_gender_and_name, only: [:italianize]
   
-  def show_topics
-  end
-
   def about
   end
 
-  # need to validate existence of form fields
   def italianize
-    if @gender == "female"
-      @italian_name = TRANSLATED_FEMALE_NAMES[@first_name] || FEMALE_NAMES[@first_name[0,1]].sample
-    else
-      @italian_name = TRANSLATED_MALE_NAMES[@first_name] || @italian_name = MALE_NAMES[@first_name[0,1]].sample
-    end
-    
-    @italian_name.capitalize!
-    @italian_name = @italian_name + " " + SURNAMES[@last_name[0,1]].sample.capitalize
-    
+    nome
+    cognome
     render :partial => "shared/italian_name"
   end
 
   private
   
+  # need to validate existence of form fields
   def validate_gender_and_name
     @gender = params[:gender]
     @first_name = params[:first_name]
@@ -39,5 +28,41 @@ class HomepageController < ApplicationController
     #   params[:exchange_number],
     #   params[:subscriber_number]
     # )
+  end
+
+  def nome
+    if @gender == "female"
+      @italian_name = TRANSLATED_FEMALE_NAMES[@first_name] || FEMALE_NAMES[@first_name[0,1]].sample
+    else
+      @italian_name = TRANSLATED_MALE_NAMES[@first_name] || @italian_name = MALE_NAMES[@first_name[0,1]].sample
+    end
+    @italian_name.capitalize!
+  end
+
+  def cognome
+    prefisso
+    suffiso
+    @italian_name = @italian_name + "  " + @prefix + @last_name.capitalize 
+  end
+
+  def prefisso
+    @prefix = ""
+    if @last_name =~ /\A[AEIOU]/
+      @prefix = "D'"
+    elsif @last_name[0,1] == 'D'
+      @last_name.insert(1,"\'")
+    else  
+      if rand(2) == 0
+        @prefix = "Di"
+      end
+    end
+  end
+
+  def suffiso
+    if @last_name =~ /[AEIOUY]$/
+      @last_name.gsub!(/[AEIOUY]$/, ['I','INO','INA','INI'].sample)
+    else
+      @last_name.concat(['I','INO','INA','INI'].sample)
+    end
   end
 end
