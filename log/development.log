@@ -70074,3 +70074,3136 @@ Processing by HomepageController#italianize as */*
   Parameters: {"gender"=>"female", "first_name"=>"lea", "last_name"=>"Coligado"}
   Rendered shared/_italian_name.html.haml (0.2ms)
 Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (9.4ms)
+  Rendered shared/_header.html.haml (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 216ms (Views: 205.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.5ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:16:09 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:16:10 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:16:10 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:16:16 -0700
+
+
+Started GET "/italianize?gender=&first_name=&last_name=coligado" for 127.0.0.1 at 2014-09-14 21:16:19 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>"coligado"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError - undefined method `sample' for nil:NilClass:
+   () Users/leacoligado/Desktop/cecilia/app/controllers/homepage_controller.rb:38:in `nome'
+   () Users/leacoligado/Desktop/cecilia/app/controllers/homepage_controller.rb:12:in `italianize'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+   () Users/leacoligado/.rvm/gems/ruby-2.1.2@global/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+   () Users/leacoligado/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/leacoligado/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/leacoligado/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:16:21 -0700
+
+
+Started GET "/italianize?gender=male&first_name=lea&last_name=coligado" for 127.0.0.1 at 2014-09-14 21:16:29 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"lea", "last_name"=>"coligado"}
+  Rendered shared/_italian_name.html.haml (1.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=lea&last_name=wedekind" for 127.0.0.1 at 2014-09-14 21:16:41 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"lea", "last_name"=>"wedekind"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:16:49 -0700
+
+
+Started GET "/italianize?gender=male&first_name=Katy&last_name=Jackson" for 127.0.0.1 at 2014-09-14 21:17:10 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"Katy", "last_name"=>"Jackson"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:17:22 -0700
+
+
+Started GET "/italianize?gender=male&first_name=nicki&last_name=minaj" for 127.0.0.1 at 2014-09-14 21:17:41 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"nicki", "last_name"=>"minaj"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:17:46 -0700
+
+
+Started GET "/italianize?gender=male&first_name=rafael&last_name=nadal" for 127.0.0.1 at 2014-09-14 21:17:54 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"rafael", "last_name"=>"nadal"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=catie&last_name=mong" for 127.0.0.1 at 2014-09-14 21:18:07 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"catie", "last_name"=>"mong"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:18:16 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:18:17 -0700
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:18:17 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:18:27 -0700
+
+
+Started GET "/italianize?gender=female&first_name=iris&last_name=shao" for 127.0.0.1 at 2014-09-14 21:18:30 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"iris", "last_name"=>"shao"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:18:33 -0700
+
+
+Started GET "/italianize?gender=female&first_name=alice&last_name=sun" for 127.0.0.1 at 2014-09-14 21:18:43 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"alice", "last_name"=>"sun"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:18:52 -0700
+
+
+Started GET "/italianize?gender=female&first_name=jenna&last_name=wisch" for 127.0.0.1 at 2014-09-14 21:18:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"jenna", "last_name"=>"wisch"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=female&first_name=alyshah&last_name=aziz" for 127.0.0.1 at 2014-09-14 21:19:09 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"alyshah", "last_name"=>"aziz"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:19:11 -0700
+
+
+Started GET "/italianize?gender=female&first_name=juliana&last_name=trujillo" for 127.0.0.1 at 2014-09-14 21:19:24 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"juliana", "last_name"=>"trujillo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:20:09 -0700
+
+
+Started GET "/italianize?gender=male&first_name=james&last_name=pestridge" for 127.0.0.1 at 2014-09-14 21:20:36 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"james", "last_name"=>"pestridge"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:20:59 -0700
+
+
+Started GET "/italianize?gender=male&first_name=robert&last_name=chun" for 127.0.0.1 at 2014-09-14 21:21:04 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"robert", "last_name"=>"chun"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:21:09 -0700
+
+
+Started GET "/italianize?gender=male&first_name=santiago&last_name=doria" for 127.0.0.1 at 2014-09-14 21:21:15 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"santiago", "last_name"=>"doria"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:21:25 -0700
+
+
+Started GET "/italianize?gender=male&first_name=nico&last_name=cserepy" for 127.0.0.1 at 2014-09-14 21:21:31 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"nico", "last_name"=>"cserepy"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:21:37 -0700
+
+
+Started GET "/italianize?gender=male&first_name=justin&last_name=meier" for 127.0.0.1 at 2014-09-14 21:21:43 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"justin", "last_name"=>"meier"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=nicholas&last_name=perkins" for 127.0.0.1 at 2014-09-14 21:21:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"nicholas", "last_name"=>"perkins"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:22:28 -0700
+
+
+Started GET "/italianize?gender=male&first_name=nicholas&last_name=perkins" for 127.0.0.1 at 2014-09-14 21:22:40 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"nicholas", "last_name"=>"perkins"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:22:42 -0700
+
+
+Started GET "/italianize?gender=male&first_name=tucker&last_name=bryant" for 127.0.0.1 at 2014-09-14 21:22:55 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"tucker", "last_name"=>"bryant"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.4ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:23:25 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:23:26 -0700
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:23:26 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:23:30 -0700
+
+
+Started GET "/italianize?gender=male&first_name=tucker&last_name=bryant" for 127.0.0.1 at 2014-09-14 21:23:33 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"tucker", "last_name"=>"bryant"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:23:49 -0700
+
+
+Started GET "/italianize?gender=male&first_name=eric&last_name=smalls" for 127.0.0.1 at 2014-09-14 21:23:54 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"eric", "last_name"=>"smalls"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:24:22 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:24:25 -0700
+
+
+Started GET "/italianize?gender=&first_name=eric&last_name=smalls" for 127.0.0.1 at 2014-09-14 21:24:28 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"", "first_name"=>"eric", "last_name"=>"smalls"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:24:35 -0700
+
+
+Started GET "/italianize?gender=male&first_name=derik&last_name=jardine" for 127.0.0.1 at 2014-09-14 21:24:42 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"derik", "last_name"=>"jardine"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:24:52 -0700
+
+
+Started GET "/italianize?gender=male&first_name=AJ&last_name=Rios" for 127.0.0.1 at 2014-09-14 21:24:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"AJ", "last_name"=>"Rios"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=roberto&last_name=pimienta" for 127.0.0.1 at 2014-09-14 21:25:10 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"roberto", "last_name"=>"pimienta"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:25:15 -0700
+
+
+Started GET "/italianize?gender=male&first_name=anton&last_name=apostolatos" for 127.0.0.1 at 2014-09-14 21:25:21 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"anton", "last_name"=>"apostolatos"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:25:25 -0700
+
+
+Started GET "/italianize?gender=male&first_name=avery&last_name=haskell" for 127.0.0.1 at 2014-09-14 21:25:33 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"avery", "last_name"=>"haskell"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:25:34 -0700
+
+
+Started GET "/italianize?gender=male&first_name=ajit&last_name=vakharia" for 127.0.0.1 at 2014-09-14 21:25:50 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"ajit", "last_name"=>"vakharia"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=matthaus&last_name=weinhardt" for 127.0.0.1 at 2014-09-14 21:26:09 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"matthaus", "last_name"=>"weinhardt"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:26:25 -0700
+
+
+Started GET "/italianize?gender=male&first_name=bhaven&last_name=patel" for 127.0.0.1 at 2014-09-14 21:26:37 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"bhaven", "last_name"=>"patel"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:26:40 -0700
+
+
+Started GET "/italianize?gender=male&first_name=jin&last_name=park" for 127.0.0.1 at 2014-09-14 21:26:48 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"jin", "last_name"=>"park"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:26:56 -0700
+
+
+Started GET "/italianize?gender=male&first_name=abraham&last_name=starosta" for 127.0.0.1 at 2014-09-14 21:27:02 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"abraham", "last_name"=>"starosta"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:27:04 -0700
+
+
+Started GET "/italianize?gender=male&first_name=noah&last_name=johnston" for 127.0.0.1 at 2014-09-14 21:27:12 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"noah", "last_name"=>"johnston"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:27:30 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:27:37 -0700
+
+
+Started GET "/italianize?gender=male&first_name=NOAh&last_name=johnsont" for 127.0.0.1 at 2014-09-14 21:27:40 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"NOAh", "last_name"=>"johnsont"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 21:27:50 -0700
+
+
+Started GET "/italianize?gender=male&first_name=phillip&last_name=hoovestol" for 127.0.0.1 at 2014-09-14 21:27:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"phillip", "last_name"=>"hoovestol"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:28:26 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:28:32 -0700
+
+
+Started GET "/italianize?gender=male&first_name=phillip&last_name=hoovestol" for 127.0.0.1 at 2014-09-14 21:28:35 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"phillip", "last_name"=>"hoovestol"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=elliot&last_name=chanen" for 127.0.0.1 at 2014-09-14 21:28:53 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"elliot", "last_name"=>"chanen"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:29:00 -0700
+
+
+Started GET "/italianize?gender=male&first_name=loren&last_name=pilorin" for 127.0.0.1 at 2014-09-14 21:29:06 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"loren", "last_name"=>"pilorin"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=karl&last_name=wessendorf" for 127.0.0.1 at 2014-09-14 21:29:19 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"karl", "last_name"=>"wessendorf"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:29:29 -0700
+
+
+Started GET "/italianize?gender=male&first_name=alex&last_name=sax" for 127.0.0.1 at 2014-09-14 21:29:36 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"alex", "last_name"=>"sax"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:29:51 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:29:55 -0700
+
+
+Started GET "/italianize?gender=male&first_name=alex&last_name=sax" for 127.0.0.1 at 2014-09-14 21:29:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"alex", "last_name"=>"sax"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:30:04 -0700
+
+
+Started GET "/italianize?gender=male&first_name=rassan&last_name=walker" for 127.0.0.1 at 2014-09-14 21:30:10 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"rassan", "last_name"=>"walker"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 21:30:26 -0700
+
+
+Started GET "/italianize?gender=male&first_name=andrew&last_name=vasquez" for 127.0.0.1 at 2014-09-14 21:30:33 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"andrew", "last_name"=>"vasquez"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:31:12 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:31:18 -0700
+
+
+Started GET "/italianize?gender=male&first_name=andrew&last_name=vasquez" for 127.0.0.1 at 2014-09-14 21:31:21 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"andrew", "last_name"=>"vasquez"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:31:33 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:31:54 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:31:55 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:31:55 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:32:00 -0700
+
+
+Started GET "/italianize?gender=male&first_name=andrew&last_name=vasquez" for 127.0.0.1 at 2014-09-14 21:32:03 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"andrew", "last_name"=>"vasquez"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:32:10 -0700
+
+
+Started GET "/italianize?gender=male&first_name=milo&last_name=arevalo" for 127.0.0.1 at 2014-09-14 21:32:16 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"milo", "last_name"=>"arevalo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:32:25 -0700
+
+
+Started GET "/italianize?gender=male&first_name=jordan&last_name=miller" for 127.0.0.1 at 2014-09-14 21:32:31 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"jordan", "last_name"=>"miller"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=chris&last_name=barber" for 127.0.0.1 at 2014-09-14 21:33:02 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"chris", "last_name"=>"barber"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=matt&last_name=rials" for 127.0.0.1 at 2014-09-14 21:33:17 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"matt", "last_name"=>"rials"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:33:19 -0700
+
+
+Started GET "/italianize?gender=male&first_name=hassan&last_name=karaouni" for 127.0.0.1 at 2014-09-14 21:33:26 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"hassan", "last_name"=>"karaouni"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=brandon&last_name=hill" for 127.0.0.1 at 2014-09-14 21:33:50 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"brandon", "last_name"=>"hill"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:34:06 -0700
+
+
+Started GET "/italianize?gender=male&first_name=Jason&last_name=Khoo" for 127.0.0.1 at 2014-09-14 21:34:19 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"Jason", "last_name"=>"Khoo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:34:56 -0700
+
+
+Started GET "/italianize?gender=male&first_name=jason&last_name=khoo" for 127.0.0.1 at 2014-09-14 21:35:02 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"jason", "last_name"=>"khoo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:35:30 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:35:35 -0700
+
+
+Started GET "/italianize?gender=male&first_name=jason&last_name=khoo" for 127.0.0.1 at 2014-09-14 21:35:38 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"jason", "last_name"=>"khoo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:37:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:37:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:37:49 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:37:53 -0700
+
+
+Started GET "/italianize?gender=male&first_name=jason&last_name=khoo" for 127.0.0.1 at 2014-09-14 21:37:56 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"jason", "last_name"=>"khoo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=arjun&last_name=krishnaswami" for 127.0.0.1 at 2014-09-14 21:38:19 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"arjun", "last_name"=>"krishnaswami"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:38:28 -0700
+
+
+Started GET "/italianize?gender=male&first_name=john&last_name=newcomb" for 127.0.0.1 at 2014-09-14 21:38:34 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"john", "last_name"=>"newcomb"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:38:37 -0700
+
+
+Started GET "/italianize?gender=male&first_name=brian&last_name=do" for 127.0.0.1 at 2014-09-14 21:38:44 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"brian", "last_name"=>"do"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 21:39:03 -0700
+
+
+Started GET "/italianize?gender=male&first_name=vander&last_name=harris" for 127.0.0.1 at 2014-09-14 21:39:09 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"vander", "last_name"=>"harris"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:39:28 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:39:40 -0700
+
+
+Started GET "/italianize?gender=male&first_name=pat&last_name=briggs" for 127.0.0.1 at 2014-09-14 21:39:43 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"pat", "last_name"=>"briggs"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=rotimi&last_name=opeke" for 127.0.0.1 at 2014-09-14 21:40:10 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"rotimi", "last_name"=>"opeke"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:40:25 -0700
+
+
+Started GET "/italianize?gender=male&first_name=devon&last_name=warshaw" for 127.0.0.1 at 2014-09-14 21:40:31 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"devon", "last_name"=>"warshaw"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:42:28 -0700
+
+
+Started GET "/italianize?gender=male&first_name=gabriel&last_name=casalduc" for 127.0.0.1 at 2014-09-14 21:42:40 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"gabriel", "last_name"=>"casalduc"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:42:56 -0700
+
+
+Started GET "/italianize?gender=male&first_name=kunal&last_name=patel" for 127.0.0.1 at 2014-09-14 21:43:01 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"kunal", "last_name"=>"patel"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:43:08 -0700
+
+
+Started GET "/italianize?gender=male&first_name=jeffrey&last_name=harris" for 127.0.0.1 at 2014-09-14 21:43:14 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"jeffrey", "last_name"=>"harris"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=grant&last_name=means" for 127.0.0.1 at 2014-09-14 21:43:36 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"grant", "last_name"=>"means"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=ray&last_name=chen" for 127.0.0.1 at 2014-09-14 21:43:48 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"ray", "last_name"=>"chen"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=larry&last_name=ge" for 127.0.0.1 at 2014-09-14 21:43:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"larry", "last_name"=>"ge"}
+  Rendered shared/_italian_name.html.haml (0.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=anthony&last_name=ghosn" for 127.0.0.1 at 2014-09-14 21:44:13 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"anthony", "last_name"=>"ghosn"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:44:22 -0700
+
+
+Started GET "/italianize?gender=male&first_name=jeremy&last_name=moffet" for 127.0.0.1 at 2014-09-14 21:44:27 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"jeremy", "last_name"=>"moffet"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:44:41 -0700
+
+
+Started GET "/italianize?gender=male&first_name=ajay&last_name=sohmshetty" for 127.0.0.1 at 2014-09-14 21:44:48 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"ajay", "last_name"=>"sohmshetty"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.8ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:46:30 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:46:31 -0700
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 21:46:31 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:46:37 -0700
+
+
+Started GET "/italianize?gender=male&first_name=baris&last_name=akis" for 127.0.0.1 at 2014-09-14 21:46:40 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"baris", "last_name"=>"akis"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=edward&last_name=salonga" for 127.0.0.1 at 2014-09-14 21:47:29 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"edward", "last_name"=>"salonga"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:47:39 -0700
+
+
+Started GET "/italianize?gender=male&first_name=garret&last_name=celestin" for 127.0.0.1 at 2014-09-14 21:47:46 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"garret", "last_name"=>"celestin"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:48:03 -0700
+
+
+Started GET "/italianize?gender=male&first_name=shayne&last_name=longpre" for 127.0.0.1 at 2014-09-14 21:48:09 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"shayne", "last_name"=>"longpre"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:48:14 -0700
+
+
+Started GET "/italianize?gender=male&first_name=madison&last_name=hayden" for 127.0.0.1 at 2014-09-14 21:48:20 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"madison", "last_name"=>"hayden"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.0ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:49:02 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:49:07 -0700
+
+
+Started GET "/italianize?gender=male&first_name=madison&last_name=hayden" for 127.0.0.1 at 2014-09-14 21:49:10 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"madison", "last_name"=>"hayden"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=nicolas&last_name=perdomo" for 127.0.0.1 at 2014-09-14 21:49:35 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"nicolas", "last_name"=>"perdomo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:49:52 -0700
+
+
+Started GET "/italianize?gender=male&first_name=jason&last_name=khoo" for 127.0.0.1 at 2014-09-14 21:49:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"jason", "last_name"=>"khoo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=ajay&last_name=sohmshetty" for 127.0.0.1 at 2014-09-14 21:50:09 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"ajay", "last_name"=>"sohmshetty"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:50:12 -0700
+
+
+Started GET "/italianize?gender=male&first_name=michael&last_name=woo" for 127.0.0.1 at 2014-09-14 21:50:21 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"michael", "last_name"=>"woo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 21:51:01 -0700
+
+
+Started GET "/italianize?gender=male&first_name=min&last_name=liu" for 127.0.0.1 at 2014-09-14 21:51:09 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"min", "last_name"=>"liu"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:51:36 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.0ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:51:37 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:51:40 -0700
+
+
+Started GET "/italianize?gender=male&first_name=min&last_name=liu" for 127.0.0.1 at 2014-09-14 21:51:43 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"min", "last_name"=>"liu"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:51:45 -0700
+
+
+Started GET "/italianize?gender=male&first_name=michael&last_name=woo" for 127.0.0.1 at 2014-09-14 21:51:52 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"michael", "last_name"=>"woo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:52:20 -0700
+
+
+Started GET "/italianize?gender=male&first_name=michael&last_name=woo" for 127.0.0.1 at 2014-09-14 21:52:26 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"michael", "last_name"=>"woo"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:52:44 -0700
+
+
+Started GET "/italianize?gender=male&first_name=praveen&last_name=ramesh" for 127.0.0.1 at 2014-09-14 21:52:50 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"praveen", "last_name"=>"ramesh"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:53:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.0ms)
+  Rendered shared/_header.html.haml (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:53:22 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:53:26 -0700
+
+
+Started GET "/italianize?gender=male&first_name=praveen&last_name=ramesh" for 127.0.0.1 at 2014-09-14 21:53:29 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"praveen", "last_name"=>"ramesh"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:54:08 -0700
+
+
+Started GET "/italianize?gender=male&first_name=cristian&last_name=cibils" for 127.0.0.1 at 2014-09-14 21:54:21 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"cristian", "last_name"=>"cibils"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=travis&last_name=le" for 127.0.0.1 at 2014-09-14 21:54:36 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"travis", "last_name"=>"le"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 21:54:42 -0700
+
+
+Started GET "/italianize?gender=male&first_name=robert&last_name=lee" for 127.0.0.1 at 2014-09-14 21:54:47 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"robert", "last_name"=>"lee"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=female&first_name=erin&last_name=singer" for 127.0.0.1 at 2014-09-14 21:55:51 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"erin", "last_name"=>"singer"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:56:13 -0700
+
+
+Started GET "/italianize?gender=female&first_name=catie&last_name=mong" for 127.0.0.1 at 2014-09-14 21:56:22 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"catie", "last_name"=>"mong"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 21:56:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 21:56:52 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:56:55 -0700
+
+
+Started GET "/italianize?gender=female&first_name=catie&last_name=mong" for 127.0.0.1 at 2014-09-14 21:56:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"catie", "last_name"=>"mong"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 21:57:05 -0700
+
+
+Started GET "/italianize?gender=female&first_name=asia&last_name=chiao" for 127.0.0.1 at 2014-09-14 21:57:11 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"asia", "last_name"=>"chiao"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 21:57:47 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:57:50 -0700
+
+
+Started GET "/italianize?gender=female&first_name=asia&last_name=chiao" for 127.0.0.1 at 2014-09-14 21:57:53 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"asia", "last_name"=>"chiao"}
+  Rendered shared/_italian_name.html.haml (0.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=female&first_name=taylor&last_name=chambers" for 127.0.0.1 at 2014-09-14 21:58:08 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"taylor", "last_name"=>"chambers"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 21:58:23 -0700
+
+
+Started GET "/italianize?gender=female&first_name=amanda&last_name=sani" for 127.0.0.1 at 2014-09-14 21:58:28 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"amanda", "last_name"=>"sani"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 21:58:36 -0700
+
+
+Started GET "/italianize?gender=female&first_name=jessica&last_name=hernandez" for 127.0.0.1 at 2014-09-14 21:58:42 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"jessica", "last_name"=>"hernandez"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 21:59:48 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 21:59:52 -0700
+
+
+Started GET "/italianize?gender=female&first_name=jessica&last_name=hernandez" for 127.0.0.1 at 2014-09-14 21:59:55 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"jessica", "last_name"=>"hernandez"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 22:00:41 -0700
+
+
+Started GET "/italianize?gender=female&first_name=jessica&last_name=hernandez" for 127.0.0.1 at 2014-09-14 22:00:48 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"jessica", "last_name"=>"hernandez"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 22:01:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 22:01:16 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:01:21 -0700
+
+
+Started GET "/italianize?gender=female&first_name=jessica&last_name=hernandez" for 127.0.0.1 at 2014-09-14 22:01:24 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"jessica", "last_name"=>"hernandez"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=female&first_name=pavitra&last_name=rengarajan" for 127.0.0.1 at 2014-09-14 22:01:41 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"pavitra", "last_name"=>"rengarajan"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 22:02:51 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:02:55 -0700
+
+
+Started GET "/italianize?gender=female&first_name=arlene&last_name=amieva" for 127.0.0.1 at 2014-09-14 22:02:58 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"arlene", "last_name"=>"amieva"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 22:03:04 -0700
+
+
+Started GET "/italianize?gender=female&first_name=ambika&last_name=acharya" for 127.0.0.1 at 2014-09-14 22:03:10 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"ambika", "last_name"=>"acharya"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.0ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 22:03:31 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:03:32 -0700
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 22:03:34 -0700
+
+
+Started GET "/italianize?gender=female&first_name=ambika&last_name=acharya" for 127.0.0.1 at 2014-09-14 22:03:40 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"ambika", "last_name"=>"acharya"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=female&first_name=nicole&last_name=bueno" for 127.0.0.1 at 2014-09-14 22:04:06 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"nicole", "last_name"=>"bueno"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=female&first_name=kiki&last_name=hui" for 127.0.0.1 at 2014-09-14 22:04:30 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kiki", "last_name"=>"hui"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 22:04:44 -0700
+
+
+Started GET "/italianize?gender=female&first_name=sooji&last_name=lee" for 127.0.0.1 at 2014-09-14 22:04:49 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"sooji", "last_name"=>"lee"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 22:05:00 -0700
+
+
+Started GET "/italianize?gender=female&first_name=jordyn&last_name=irwin" for 127.0.0.1 at 2014-09-14 22:05:06 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"jordyn", "last_name"=>"irwin"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:05:27 -0700
+
+
+Started GET "/italianize?gender=female&first_name=dulcie&last_name=davies" for 127.0.0.1 at 2014-09-14 22:05:30 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"dulcie", "last_name"=>"davies"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 22:06:01 -0700
+
+
+Started GET "/italianize?gender=female&first_name=kierstyn&last_name=smith" for 127.0.0.1 at 2014-09-14 22:06:08 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kierstyn", "last_name"=>"smith"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 22:08:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:04 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:08:05 -0700
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 22:08:05 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:08:14 -0700
+
+
+Started GET "/italianize?gender=female&first_name=kierstyn&last_name=smith" for 127.0.0.1 at 2014-09-14 22:08:17 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kierstyn", "last_name"=>"smith"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 22:08:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.0ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 22:08:47 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:08:51 -0700
+
+
+Started GET "/italianize?gender=female&first_name=kierstyn&last_name=smith" for 127.0.0.1 at 2014-09-14 22:08:54 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kierstyn", "last_name"=>"smith"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 22:10:42 -0700
+
+
+Started GET "/italianize?gender=female&first_name=kierstyn&last_name=smith" for 127.0.0.1 at 2014-09-14 22:10:48 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kierstyn", "last_name"=>"smith"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 22:11:07 -0700
+
+
+Started GET "/italianize?gender=female&first_name=kylie&last_name=west" for 127.0.0.1 at 2014-09-14 22:11:13 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kylie", "last_name"=>"west"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 22:12:00 -0700
+
+
+Started GET "/italianize?gender=female&first_name=anna&last_name=nackley" for 127.0.0.1 at 2014-09-14 22:12:59 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"anna", "last_name"=>"nackley"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-14 22:13:03 -0700
+
+
+Started GET "/italianize?gender=female&first_name=jim&last_name=nackley" for 127.0.0.1 at 2014-09-14 22:13:13 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"jim", "last_name"=>"nackley"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=female&first_name=shannon&last_name=chan" for 127.0.0.1 at 2014-09-14 22:13:22 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"shannon", "last_name"=>"chan"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=male&first_name=Lea&last_name=Coligado" for 127.0.0.1 at 2014-09-14 22:15:53 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"Lea", "last_name"=>"Coligado"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-14 22:15:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:16:46 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:16:47 -0700
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-14 22:16:47 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:16:51 -0700
+
+
+Started GET "/italianize?gender=female&first_name=lea&last_name=coligado" for 127.0.0.1 at 2014-09-14 22:16:54 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"lea", "last_name"=>"coligado"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-14 22:16:56 -0700
+
+
+Started GET "/italianize?gender=female&first_name=aishwarya&last_name=rai" for 127.0.0.1 at 2014-09-14 22:17:13 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"aishwarya", "last_name"=>"rai"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 22:17:16 -0700
+
+
+Started GET "/italianize?gender=female&first_name=jennifer&last_name=lopez" for 127.0.0.1 at 2014-09-14 22:17:23 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"jennifer", "last_name"=>"lopez"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 22:17:28 -0700
+
+
+Started GET "/italianize?gender=female&first_name=anthony&last_name=gonazales" for 127.0.0.1 at 2014-09-14 22:17:38 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"anthony", "last_name"=>"gonazales"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/italianize?gender=female&first_name=anthony&last_name=gonzales" for 127.0.0.1 at 2014-09-14 22:18:01 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"anthony", "last_name"=>"gonzales"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-14 22:18:04 -0700
+
+
+Started GET "/italianize?gender=female&first_name=steph&last_name=chan" for 127.0.0.1 at 2014-09-14 22:18:20 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"steph", "last_name"=>"chan"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 22:18:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.5ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/toscani_3.jpg" for 127.0.0.1 at 2014-09-14 22:19:05 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:19:08 -0700
+
+
+Started GET "/italianize?gender=female&first_name=steph&last_name=chan" for 127.0.0.1 at 2014-09-14 22:19:11 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"female", "first_name"=>"steph", "last_name"=>"chan"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:19:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/pantheon.jpg" for 127.0.0.1 at 2014-09-14 22:19:25 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-14 22:19:31 -0700
+
+
+Started GET "/italianize?gender=male&first_name=rafael&last_name=chan" for 127.0.0.1 at 2014-09-14 22:19:34 -0700
+Processing by HomepageController#italianize as */*
+  Parameters: {"gender"=>"male", "first_name"=>"rafael", "last_name"=>"chan"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)

@@ -41,6 +41,7 @@ class HomepageController < ApplicationController
   end
 
   def cognome
+    sostituire
     prefisso
     suffiso
     @italian_name = @italian_name + "  " + @prefix + @last_name.capitalize 
@@ -60,10 +61,24 @@ class HomepageController < ApplicationController
   end
 
   def suffiso
-    if @last_name =~ /[AEIOUY]$/
-      @last_name.gsub!(/[AEIOUY]$/, ['I','INO','INA','INI'].sample)
+    if @last_name =~ /[AEIO]$/
+      @last_name.gsub!(/[AEIO]$/, ['I','INO','INA','INI'].sample)
     else
       @last_name.concat(['I','INO','INA','INI'].sample)
     end
+    @last_name.squeeze!
+  end
+
+  def sostituire
+    @last_name.gsub!(/[H]/, '')
+    @last_name.gsub!(/[J]/, 'GI')
+    @last_name.gsub!(/[W]/, 'V')
+    @last_name.gsub!(/[Y]/, 'I')
+    @last_name.gsub!(/(AY)/, 'EI')
+    @last_name.gsub!(/(CH)/, 'CI')
+    @last_name.gsub!(/(CK|K|QU)/, 'CH')
+    @last_name.gsub!(/(OO)/, 'U')
+    @last_name.gsub!(/(SH)/, 'C')
+    @last_name.gsub!(/(X|Z)/, 'S')
   end
 end
