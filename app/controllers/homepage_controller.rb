@@ -22,6 +22,7 @@ class HomepageController < ApplicationController
     @first_name = params[:first_name]
     @first_name.upcase!
     @last_name = params[:last_name]
+    @last_name.gsub!(/\s+/, "")
     @last_name.upcase!
     # @name = Name.new(
     #   params[:gender],
@@ -48,7 +49,7 @@ class HomepageController < ApplicationController
   def prefisso
     @prefix = ""
     if @last_name =~ /\A[AEIOU]/
-      @prefix = "D'"
+      @prefix = "D\'"
     elsif @last_name[0,1] == 'D'
       @last_name.insert(1,"\'")
     else  

@@ -30,15 +30,15 @@
 .loading {
   font-size   : 32px;
   text-align  : center;
-  margin      : 10% auto;
+  margin      : 12% auto;
   cursor      : default;
 }
 
 .loading_gif {
-  // background : url("/assets/loading.gif");
-  width      : 35px;
-  height     : 35px;
-  margin     : 30px auto;
+  background : url("/assets/loading.gif") no-repeat;
+  width      : 150px;
+  height     : 150px;
+  margin     : 0 auto;
 }
 
 .lightbox_header {
