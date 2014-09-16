@@ -3,7 +3,7 @@ class HomepageController < ApplicationController
   MALE_NAMES = YAML.load_file('config/name_data/sorted_male_names.yml')
   TRANSLATED_FEMALE_NAMES = YAML.load_file('config/name_data/translated_female_names.yml')
   TRANSLATED_MALE_NAMES = YAML.load_file('config/name_data/translated_male_names.yml')
-  before_filter :validate_gender_and_name, only: [:italianize]
+  before_filter :initialize, only: [:italianize]
   
   def about
   end
@@ -38,9 +38,9 @@ class HomepageController < ApplicationController
     @last_name.upcase!
   end
 
-  def name_params
-    return params.permit(:first_name,:last_name,:gender)
-  end
+  # def name_params
+  #   return params.permit(:first_name,:last_name,:gender)
+  # end
 
   def nome
     @first_name.gsub!(/\s+/, "")
