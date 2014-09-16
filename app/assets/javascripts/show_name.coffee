@@ -28,11 +28,7 @@ refreshWallpaper = ->
 searchName = ->
   if $(".shadow_box").hasClass("hide")
     openNameBox()
-    simulate_load = setTimeout(->
-      $(".loading").hide()
-      displayResponse()
-      return
-    , 3000)
+    displayResponse()
 
 
 displayResponse = ->
@@ -46,8 +42,9 @@ displayResponse = ->
       first_name : $('#first_name').val()
       last_name  : $('#last_name').val()
   ).done (response) ->
+    $('.loading').hide()
     $('.results').html response
-    $(".results").show()
+    $('.results').show()
 
 
 openNameBox = ->

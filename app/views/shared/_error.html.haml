@@ -1,4 +1,4 @@
-- if flash[:notice]
-  .error= flash[:notice]
-
-WHAT'S UP MOTHASUCKAAAA
+.errors
+  -if @messages.any?
+    .error_en= @messages[0]
+    .error_it= @messages[1]

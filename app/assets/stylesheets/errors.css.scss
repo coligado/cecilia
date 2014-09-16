@@ -1,0 +1,15 @@
+@import 'variables';
+
+.errors {
+  text-align: center;
+  font-size : 28px;
+  margin    : 17% auto 0 auto;
+}
+
+.error_en {
+  font-family: $serif;
+}
+
+.error_it {
+  font-family: $pac;
+}
