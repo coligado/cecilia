@@ -23,8 +23,8 @@
         = radio_button_tag(:gender, "other")
         = label_tag(:gender_other, "altro")
       .name_search_bar
-        %input.name_box{ id: :first_name, name: :first_name, type: "text", placeholder: "first name" }
-        %input.name_box{ id: :last_name, name: :last_name, type: "text", placeholder: "last name" }
+        %input.name_box{ id: :first_name, name: :first_name, type: "text", placeholder: "first name", autocomplete: "off" }
+        %input.name_box{ id: :last_name, name: :last_name, type: "text", placeholder: "last name", autocomplete: "off" }
       #dai_button.search_button Dai!
 .footer 
   .copyright Copyright © 2014 Lea Coligado&nbsp;&nbsp;|&nbsp;&nbsp;All photography by Lea Coligado

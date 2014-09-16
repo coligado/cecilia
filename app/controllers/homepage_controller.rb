@@ -14,24 +14,36 @@ class HomepageController < ApplicationController
     render :partial => "shared/italian_name"
   end
 
+  # def create
+  #   @new_name = Name.new(name_params(@first_name,@last_name,@gender))
+  #   @new_name.first_name = @first_name
+  #   @new_name.last_name  = @last_name
+  #   @new_name.gender     = @gender
+    
+  #   if @new_name.save then
+  #     puts "Name saved!"
+  #   else
+  #     flash[:notice] = "Please complete all fields."
+  #   end
+  #   redirect_to(action: :italianize)
+  # end
+
   private
   
-  # need to validate existence of form fields
-  def validate_gender_and_name
-    @gender = params[:gender]
+  def initialize
+    @gender     = params[:gender]
     @first_name = params[:first_name]
     @first_name.upcase!
-    @last_name = params[:last_name]
-    @last_name.gsub!(/\s+/, "")
+    @last_name  = params[:last_name]
     @last_name.upcase!
-    # @name = Name.new(
-    #   params[:gender],
-    #   params[:exchange_number],
-    #   params[:subscriber_number]
-    # )
+  end
+
+  def name_params
+    return params.permit(:first_name,:last_name,:gender)
   end
 
   def nome
+    @first_name.gsub!(/\s+/, "")
     if @gender == "female"
       @italian_name = TRANSLATED_FEMALE_NAMES[@first_name] || FEMALE_NAMES[@first_name[0,1]].sample
     else
@@ -61,6 +73,7 @@ class HomepageController < ApplicationController
   end
 
   def suffiso
+    @last_name.gsub!(/\s+/, "")
     if @last_name =~ /[AEIO]$/
       @last_name.gsub!(/[AEIO]$/, ['I','INO','INA','INI'].sample)
     else
@@ -70,7 +83,6 @@ class HomepageController < ApplicationController
   end
 
   def sostituire
-    @last_name.gsub!(/[H]/, '')
     @last_name.gsub!(/[J]/, 'GI')
     @last_name.gsub!(/[W]/, 'V')
     @last_name.gsub!(/[Y]/, 'I')
