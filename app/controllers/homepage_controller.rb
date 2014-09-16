@@ -3,7 +3,7 @@ class HomepageController < ApplicationController
   MALE_NAMES = YAML.load_file('config/name_data/sorted_male_names.yml')
   TRANSLATED_FEMALE_NAMES = YAML.load_file('config/name_data/translated_female_names.yml')
   TRANSLATED_MALE_NAMES = YAML.load_file('config/name_data/translated_male_names.yml')
-  before_filter :initialize, only: [:italianize]
+  before_filter :initialize_name, only: [:italianize]
   
   def about
   end
@@ -30,8 +30,8 @@ class HomepageController < ApplicationController
 
   private
   
-  def initialize
-    @gender     = params[:gender]
+  def initialize_name
+    @gender = params[:gender]
     @first_name = params[:first_name]
     @first_name.upcase!
     @last_name  = params[:last_name]
