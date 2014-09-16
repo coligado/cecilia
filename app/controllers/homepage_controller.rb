@@ -3,7 +3,7 @@ class HomepageController < ApplicationController
   MALE_NAMES = YAML.load_file('config/name_data/sorted_male_names.yml')
   TRANSLATED_FEMALE_NAMES = YAML.load_file('config/name_data/translated_female_names.yml')
   TRANSLATED_MALE_NAMES = YAML.load_file('config/name_data/translated_male_names.yml')
-  before_filter :initialize_name, only: [:italianize]
+  before_filter :initialize_name, only: [:create]
   
   def about
   end
@@ -14,19 +14,22 @@ class HomepageController < ApplicationController
     render :partial => "shared/italian_name"
   end
 
-  # def create
-  #   @new_name = Name.new(name_params(@first_name,@last_name,@gender))
-  #   @new_name.first_name = @first_name
-  #   @new_name.last_name  = @last_name
-  #   @new_name.gender     = @gender
+  def error
+    render :partial => "shared/error"
+  end
+
+  def create
+    @new_name = Name.new
+    @new_name.first_name = @first_name
+    @new_name.last_name  = @last_name
+    @new_name.gender     = @gender
     
-  #   if @new_name.save then
-  #     puts "Name saved!"
-  #   else
-  #     flash[:notice] = "Please complete all fields."
-  #   end
-  #   redirect_to(action: :italianize)
-  # end
+    if @new_name.save then
+      redirect_to(action: :italianize)
+    else
+      redirect_to(action: :error)
+    end
+  end
 
   private
   
@@ -37,10 +40,6 @@ class HomepageController < ApplicationController
     @last_name  = params[:last_name]
     @last_name.upcase!
   end
-
-  # def name_params
-  #   return params.permit(:first_name,:last_name,:gender)
-  # end
 
   def nome
     @first_name.gsub!(/\s+/, "")

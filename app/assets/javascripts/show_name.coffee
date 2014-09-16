@@ -40,7 +40,7 @@ displayResponse = ->
   if (selected.length > 0)
     selectedGender = selected.val()
   $.ajax(
-    url: "/italianize"
+    url: "/create"
     data:
       gender     : selectedGender
       first_name : $('#first_name').val()
