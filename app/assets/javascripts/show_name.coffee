@@ -1,8 +1,7 @@
-images         = ['duomo.jpg', 'pantheon.jpg', 'trevi.jpg', 'firenze.jpg', 'manarola.jpg', 'toscani_1.jpg', 'toscani_2.jpg', 'vernazza.jpg']
+images         = ['duomo.jpg', 'trevi.jpg', 'manarola.jpg', 'toscani_1.jpg', 'toscani_2.jpg', 'vernazza.jpg']
 selectedGender = ""
 simulate_load  = ""
 
-# This function...
 $ ->
   refreshWallpaper()
 
