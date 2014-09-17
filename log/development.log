@@ -102457,3 +102457,1112 @@ Processing by HomepageController#index as HTML
   Rendered shared/_header.html.haml (0.1ms)
   Rendered shared/_footer.html.erb (0.0ms)
 Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:25:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (5.4ms)
+  Rendered shared/_header.html.haml (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:18 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-17 13:25:19 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-17 13:25:22 -0700
+
+
+Started GET "/create?gender=&first_name=lea&last_name=coligado" for 127.0.0.1 at 2014-09-17 13:25:22 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"lea", "last_name"=>"coligado"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-17 20:25:22.923259"], ["first_name", "LEA"], ["gender", ""], ["last_name", "COLIGADO"], ["updated_at", "2014-09-17 20:25:22.923259"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/show?first_name=LEA&gender=&last_name=COLIGADO
+Completed 302 Found in 21ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/show?first_name=LEA&gender=&last_name=COLIGADO" for 127.0.0.1 at 2014-09-17 13:25:22 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"LEA", "gender"=>"", "last_name"=>"COLIGADO"}
+  Rendered shared/_italian_name.html.haml (2.2ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=female&first_name=lea&last_name=coligado" for 127.0.0.1 at 2014-09-17 13:25:26 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"female", "first_name"=>"lea", "last_name"=>"coligado"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-17 20:25:26.388667"], ["first_name", "LEA"], ["gender", "female"], ["last_name", "COLIGADO"], ["updated_at", "2014-09-17 20:25:26.388667"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/show?first_name=LEA&gender=female&last_name=COLIGADO
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/show?first_name=LEA&gender=female&last_name=COLIGADO" for 127.0.0.1 at 2014-09-17 13:25:26 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"LEA", "gender"=>"female", "last_name"=>"COLIGADO"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=female&first_name=&last_name=" for 127.0.0.1 at 2014-09-17 13:25:34 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"female", "first_name"=>"", "last_name"=>""}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:25:34 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (1.4ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 141ms (Views: 140.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-17 13:26:19 -0700
+
+
+Started GET "/create?gender=&first_name=&last_name=" for 127.0.0.1 at 2014-09-17 13:26:20 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>""}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:26:20 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.2ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=&first_name=&last_name=" for 127.0.0.1 at 2014-09-17 13:26:22 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>""}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:26:22 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.3ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.3ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 151ms (Views: 150.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:26:30 -0700
+
+
+Started GET "/create?gender=&first_name=&last_name=" for 127.0.0.1 at 2014-09-17 13:26:31 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>""}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:26:31 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:26:41 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.8ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 143ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+
+
+Started GET "/create?gender=&first_name=&last_name=" for 127.0.0.1 at 2014-09-17 13:26:42 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>""}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:26:43 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.1ms)
+  Rendered shared/_header.html.haml (1.3ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-17 13:27:27 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-17 13:27:37 -0700
+
+
+Started GET "/create?gender=male&first_name=james&last_name=webb" for 127.0.0.1 at 2014-09-17 13:27:37 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"male", "first_name"=>"james", "last_name"=>"webb"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-17 20:27:37.057327"], ["first_name", "JAMES"], ["gender", "male"], ["last_name", "WEBB"], ["updated_at", "2014-09-17 20:27:37.057327"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/show?first_name=JAMES&gender=male&last_name=WEBB
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/show?first_name=JAMES&gender=male&last_name=WEBB" for 127.0.0.1 at 2014-09-17 13:27:37 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"JAMES", "gender"=>"male", "last_name"=>"WEBB"}
+  Rendered shared/_italian_name.html.haml (0.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.1ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-17 13:28:07 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-17 13:28:10 -0700
+
+
+Started GET "/create?gender=&first_name=&last_name=" for 127.0.0.1 at 2014-09-17 13:28:10 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>""}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:28:10 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:28:13 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.2ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+
+
+Started GET "/create?gender=&first_name=&last_name=" for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>""}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:28:14 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=&first_name=claudia&last_name=dennler" for 127.0.0.1 at 2014-09-17 13:28:29 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"claudia", "last_name"=>"dennler"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-17 20:28:29.585592"], ["first_name", "CLAUDIA"], ["gender", ""], ["last_name", "DENNLER"], ["updated_at", "2014-09-17 20:28:29.585592"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/show?first_name=CLAUDIA&gender=&last_name=DENNLER
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/show?first_name=CLAUDIA&gender=&last_name=DENNLER" for 127.0.0.1 at 2014-09-17 13:28:29 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"CLAUDIA", "gender"=>"", "last_name"=>"DENNLER"}
+  Rendered shared/_italian_name.html.haml (0.2ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=&first_name=rachel&last_name=lee" for 127.0.0.1 at 2014-09-17 13:28:35 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"rachel", "last_name"=>"lee"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-17 20:28:35.288225"], ["first_name", "RACHEL"], ["gender", ""], ["last_name", "LEE"], ["updated_at", "2014-09-17 20:28:35.288225"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/show?first_name=RACHEL&gender=&last_name=LEE
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/show?first_name=RACHEL&gender=&last_name=LEE" for 127.0.0.1 at 2014-09-17 13:28:35 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"RACHEL", "gender"=>"", "last_name"=>"LEE"}
+  Rendered shared/_italian_name.html.haml (0.2ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=&first_name=nicholas&last_name=coligado" for 127.0.0.1 at 2014-09-17 13:28:42 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"nicholas", "last_name"=>"coligado"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-17 20:28:42.297702"], ["first_name", "NICHOLAS"], ["gender", ""], ["last_name", "COLIGADO"], ["updated_at", "2014-09-17 20:28:42.297702"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/show?first_name=NICHOLAS&gender=&last_name=COLIGADO
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/show?first_name=NICHOLAS&gender=&last_name=COLIGADO" for 127.0.0.1 at 2014-09-17 13:28:42 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"NICHOLAS", "gender"=>"", "last_name"=>"COLIGADO"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=&first_name=nicholas&last_name=coligado" for 127.0.0.1 at 2014-09-17 13:28:48 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"nicholas", "last_name"=>"coligado"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-17 20:28:48.794060"], ["first_name", "NICHOLAS"], ["gender", ""], ["last_name", "COLIGADO"], ["updated_at", "2014-09-17 20:28:48.794060"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/show?first_name=NICHOLAS&gender=&last_name=COLIGADO
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/show?first_name=NICHOLAS&gender=&last_name=COLIGADO" for 127.0.0.1 at 2014-09-17 13:28:48 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"NICHOLAS", "gender"=>"", "last_name"=>"COLIGADO"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:15 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 138ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:29:53 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-17 13:29:54 -0700
+
+
+Started GET "/create?gender=&first_name=&last_name=" for 127.0.0.1 at 2014-09-17 13:29:54 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>""}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:29:54 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-17 13:29:55 -0700
+
+
+Started GET "/create?gender=&first_name=lea&last_name=coligado" for 127.0.0.1 at 2014-09-17 13:29:59 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"lea", "last_name"=>"coligado"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-17 20:29:59.055362"], ["first_name", "LEA"], ["gender", ""], ["last_name", "COLIGADO"], ["updated_at", "2014-09-17 20:29:59.055362"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/show?first_name=LEA&gender=&last_name=COLIGADO
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/show?first_name=LEA&gender=&last_name=COLIGADO" for 127.0.0.1 at 2014-09-17 13:29:59 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"LEA", "gender"=>"", "last_name"=>"COLIGADO"}
+  Rendered shared/_italian_name.html.haml (0.3ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=male&first_name=camilo&last_name=arevalo" for 127.0.0.1 at 2014-09-17 13:30:08 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"male", "first_name"=>"camilo", "last_name"=>"arevalo"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-17 20:30:08.797674"], ["first_name", "CAMILO"], ["gender", "male"], ["last_name", "AREVALO"], ["updated_at", "2014-09-17 20:30:08.797674"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/show?first_name=CAMILO&gender=male&last_name=AREVALO
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/show?first_name=CAMILO&gender=male&last_name=AREVALO" for 127.0.0.1 at 2014-09-17 13:30:08 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"CAMILO", "gender"=>"male", "last_name"=>"AREVALO"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-17 13:30:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.2ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/mixin.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-17 13:31:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/manarola.jpg" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/duomo.jpg" for 127.0.0.1 at 2014-09-17 13:31:56 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-17 13:32:36 -0700
+
+
+Started GET "/create?gender=female&first_name=kim+kardashian&last_name=" for 127.0.0.1 at 2014-09-17 13:32:36 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kim kardashian", "last_name"=>""}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-17 13:32:36 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.2ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=female&first_name=kim&last_name=kardashian" for 127.0.0.1 at 2014-09-17 13:32:41 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kim", "last_name"=>"kardashian"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-17 20:32:41.745794"], ["first_name", "KIM"], ["gender", "female"], ["last_name", "KARDASHIAN"], ["updated_at", "2014-09-17 20:32:41.745794"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/show?first_name=KIM&gender=female&last_name=KARDASHIAN
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/show?first_name=KIM&gender=female&last_name=KARDASHIAN" for 127.0.0.1 at 2014-09-17 13:32:41 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"KIM", "gender"=>"female", "last_name"=>"KARDASHIAN"}
+  Rendered shared/_italian_name.html.haml (0.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=male&first_name=adam&last_name=levine" for 127.0.0.1 at 2014-09-17 13:32:54 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"male", "first_name"=>"adam", "last_name"=>"levine"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-17 20:32:54.857327"], ["first_name", "ADAM"], ["gender", "male"], ["last_name", "LEVINE"], ["updated_at", "2014-09-17 20:32:54.857327"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/show?first_name=ADAM&gender=male&last_name=LEVINE
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/show?first_name=ADAM&gender=male&last_name=LEVINE" for 127.0.0.1 at 2014-09-17 13:32:54 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"ADAM", "gender"=>"male", "last_name"=>"LEVINE"}
+  Rendered shared/_italian_name.html.haml (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-17 13:32:56 -0700
+
+
+Started GET "/create?gender=female&first_name=nene&last_name=leakes" for 127.0.0.1 at 2014-09-17 13:33:07 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"female", "first_name"=>"nene", "last_name"=>"leakes"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-17 20:33:07.427385"], ["first_name", "NENE"], ["gender", "female"], ["last_name", "LEAKES"], ["updated_at", "2014-09-17 20:33:07.427385"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/show?first_name=NENE&gender=female&last_name=LEAKES
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/show?first_name=NENE&gender=female&last_name=LEAKES" for 127.0.0.1 at 2014-09-17 13:33:07 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"NENE", "gender"=>"female", "last_name"=>"LEAKES"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=female&first_name=kim&last_name=zolciak" for 127.0.0.1 at 2014-09-17 13:33:28 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"female", "first_name"=>"kim", "last_name"=>"zolciak"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-17 20:33:28.990088"], ["first_name", "KIM"], ["gender", "female"], ["last_name", "ZOLCIAK"], ["updated_at", "2014-09-17 20:33:28.990088"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/show?first_name=KIM&gender=female&last_name=ZOLCIAK
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/show?first_name=KIM&gender=female&last_name=ZOLCIAK" for 127.0.0.1 at 2014-09-17 13:33:28 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"KIM", "gender"=>"female", "last_name"=>"ZOLCIAK"}
+  Rendered shared/_italian_name.html.haml (0.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create?gender=male&first_name=enrique&last_name=iglesias" for 127.0.0.1 at 2014-09-17 13:33:57 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"male", "first_name"=>"enrique", "last_name"=>"iglesias"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "names" ("created_at", "first_name", "gender", "last_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-17 20:33:57.357279"], ["first_name", "ENRIQUE"], ["gender", "male"], ["last_name", "IGLESIAS"], ["updated_at", "2014-09-17 20:33:57.357279"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/show?first_name=ENRIQUE&gender=male&last_name=IGLESIAS
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/show?first_name=ENRIQUE&gender=male&last_name=IGLESIAS" for 127.0.0.1 at 2014-09-17 13:33:57 -0700
+Processing by ItalianizeController#show as */*
+  Parameters: {"first_name"=>"ENRIQUE", "gender"=>"male", "last_name"=>"IGLESIAS"}
+  Rendered shared/_italian_name.html.haml (0.2ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-17 13:33:59 -0700

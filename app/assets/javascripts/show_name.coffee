@@ -62,8 +62,7 @@ closeNameBox = ->
   refreshWallpaper()
 
 
-clearSearch = (invalidNumber) ->
-  clearTimeout simulate_load
+clearSearch = ->
   $('.results').hide()
   $('#first_name').val("")
   $('#first_name').focus()
