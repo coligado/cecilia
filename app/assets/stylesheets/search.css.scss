@@ -2,19 +2,19 @@
 
 .main_title {
   text-align: center;
-  font-size : 36px;
+  font-size : 48px;
   color     : black;
-  margin    : -12px auto;
+  margin    : -14px auto;
 }
 
 .subtitle {
-  font-size : 24px; 
+  font-size : 30px; 
   text-align: center;
 }
 
 .search_background {
-  width                : 555px;
-  height               : 260px;
+  width                : 50%;
+  height               : 310px;
   margin               : 75px auto;
   background-color     : rgba(255,255,255,0.8);
   border-color         : black;
@@ -35,8 +35,8 @@
 
 .select_gender {
   font-family: $serif;
-  font-size  : 22px;
-  width      : 78%;
+  font-size  : 28px;
+  width      : 73%;
   margin     : 12px auto;
 }
 
@@ -44,7 +44,7 @@
   font-family          : $serif;
   font-size            : 24px;
   width                : 90%;
-  height               : 40px;
+  height               : 48px;
   margin               : 12px auto;
   -webkit-border-radius: 10px;
   -moz-border-radius   : 10px;
@@ -54,7 +54,7 @@
 .name_box {
   width                 : 47%;
   height                : 100%;
-  font-size             : 20px;
+  font-size             : 24px;
   color                 : dark_gray;
   text-align            : center;
   background-color      : white;
@@ -73,13 +73,13 @@
 
 .search_button {
   width                 : 30%;
-  height                : 40px;
+  height                : 48px;
   background-color      : $orange;
   font-family           : $pac;
   font-size             : 24px;
   color                 : white;
   margin-left           : 33%;
-  line-height           : 40px;
+  line-height           : 48px;
   text-align            : center;
   outline               : none;
   cursor                : pointer;

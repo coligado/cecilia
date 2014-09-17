@@ -94702,3 +94702,323 @@ Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-16 20:00:36 -0700
 
 
 Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-16 20:00:36 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:12:57 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-16 20:12:58 -0700
+
+
+Started GET "/assets/firenze.jpg" for 127.0.0.1 at 2014-09-16 20:12:58 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:15:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.9ms)
+  Rendered shared/_header.html.haml (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/assets/trevi.jpg" for 127.0.0.1 at 2014-09-16 20:17:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (4.2ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/assets/toscani_2.jpg" for 127.0.0.1 at 2014-09-16 20:28:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.0ms)
+  Rendered shared/_header.html.haml (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/errors.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/italianize.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/name_box.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/results.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/variables.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/homepage.js?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/italianize.js?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/show_name.js?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
