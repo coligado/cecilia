@@ -6,11 +6,17 @@
   font-size : 48px;
   color     : black;
   margin    : -14px auto;
+  @include mobile_breakpoint(400px) {
+    font-size: 56px;
+  }
 }
 
 .subtitle {
   font-size : 30px; 
   text-align: center;
+  @include mobile_breakpoint(400px) {
+    font-size: 36px;
+  }
 }
 
 .search_background {
@@ -44,6 +50,9 @@
   font-size  : 25px;
   width      : 73%;
   margin     : 12px auto;
+  @include mobile_breakpoint(400px) {
+    width    : 65%;
+  }
 }
 
 .name_search_bar {
@@ -51,12 +60,12 @@
   font-size            : 24px;
   width                : 90%;
   height               : 48px;
-  margin               : 12px auto;
+  margin               : 30px auto;
   -webkit-border-radius: 10px;
   -moz-border-radius   : 10px;
   border-radius        : 10px;
   @include mobile_breakpoint(400px) {
-    width              : 95%;
+    width              : 90%;
   }
 }
 
