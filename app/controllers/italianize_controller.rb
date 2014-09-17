@@ -68,6 +68,6 @@ class ItalianizeController < ApplicationController
     @last_name.gsub!(/(OO)/, 'U')
     @last_name.gsub!(/(PH)/, 'F')
     @last_name.gsub!(/(SH)/, 'C')
-    @last_name.gsub!(/(X|Z)/, 'S')
+    @last_name.gsub!(/(X)/, 'S')
   end
 end
