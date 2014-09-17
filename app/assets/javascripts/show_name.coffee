@@ -1,6 +1,7 @@
-images         = ['duomo.jpg', 'trevi.jpg', 'manarola.jpg', 'toscani_1.jpg', 'toscani_2.jpg', 'vernazza.jpg']
+images         = ['manarola.jpg', 'duomo.jpg', 'trevi.jpg', 'toscani_1.jpg', 'toscani_2.jpg', 'vernazza.jpg']
 selectedGender = ""
-simulate_load  = ""
+simulateLoad   = ""
+nextImage      = ""
 
 $ ->
   refreshWallpaper()
@@ -21,7 +22,8 @@ $ ->
 
 
 refreshWallpaper = ->
-  $('body').css 'backgroundImage', "url(assets/"+images[Math.floor(Math.random() * images.length)]+")"
+  nextImage = images[Math.floor(Math.random() * images.length)]
+  $('body').css 'backgroundImage', "url(assets/"+nextImage+")"
 
 
 searchName = ->
