@@ -1,10 +1,13 @@
 @import 'variables';
 
+html {
+  cursor                  : pointer;
+}
+
 body {
   width                   : 100%;
   margin                  : 0;
   font-family             : $pac;
-  cursor                  : default;
   background-image        : url(toscani_1.jpg);
   background-repeat       : no-repeat;
   background-attachment   : fixed;

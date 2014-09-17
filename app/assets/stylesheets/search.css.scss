@@ -15,7 +15,7 @@
 .search_background {
   width                : 50%;
   height               : 310px;
-  margin               : 110px auto;
+  margin               : 100px auto;
   background-color     : rgba(255,255,255,0.8);
   border-color         : black;
   border-style         : solid;
@@ -23,6 +23,7 @@
   -moz-border-radius   : 10px;
   border-radius        : 10px;
   z-index              : 1;
+  cursor               : default;
 }
 
 .search_content {

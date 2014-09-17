@@ -95022,3 +95022,22 @@ Started GET "/assets/toscani_1.jpg" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
 
 
 Started GET "/assets/vernazza.jpg" for 127.0.0.1 at 2014-09-16 20:30:50 -0700
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-16 20:49:27 -0700
+
+
+Started GET "/create?gender=&first_name=&last_name=" for 127.0.0.1 at 2014-09-16 20:49:27 -0700
+Processing by HomepageController#create as */*
+  Parameters: {"gender"=>"", "first_name"=>"", "last_name"=>""}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci.
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/error?error_messages%5B%5D=Please+complete+all+fields.&error_messages%5B%5D=Si+prega+di+compilare+tutte+le+voci." for 127.0.0.1 at 2014-09-16 20:49:27 -0700
+Processing by HomepageController#error as */*
+  Parameters: {"error_messages"=>["Please complete all fields.", "Si prega di compilare tutte le voci."]}
+  Rendered shared/_error.html.haml (0.2ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
