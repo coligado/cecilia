@@ -1,3 +1,4 @@
+@import 'mixin';
 @import 'variables';
 
 .shadow_box {
@@ -21,6 +22,11 @@
   -webkit-box-shadow    : 0px 2px 3px 0px rgba(38, 34, 31, 0.3);
   -moz-box-shadow       : 0px 2px 3px 0px rgba(38, 34, 31, 0.3);
   box-shadow            : 0px 2px 3px 0px rgba(38, 34, 31, 0.3);
+  @include mobile_breakpoint(400px) {
+    width : 80%;
+    height: 380px;
+    margin: 200px auto;
+  }
 }
 
 .results {
@@ -33,6 +39,10 @@
   text-align  : center;
   margin      : 12% auto;
   cursor      : default;
+
+  @include mobile_breakpoint(400px) {
+    margin    : 20% auto;
+  }
 }
 
 .loading_gif {
