@@ -1,10 +1,14 @@
-surnames = File.open( "surnames.txt", "w" )
+surnames = File.open( "italian_surnames.txt", "w" )
 
-File.open("raw_surnames.txt").each do |line|
+File.open("italian_surnames.txt").each do |line|
   name = line.split[0...1].join(' ')
-  if name == name.upcase
-	surnames << name << "\n"
+  line.split("").each do |c|
+    surnames << c
+    if /[[:upper:]]/.match(c)
+      surnames << " : " << c
+    end
   end
+  surnames << "\n"
 end
 
 surnames.close

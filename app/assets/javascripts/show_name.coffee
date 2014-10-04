@@ -1,4 +1,4 @@
-images         = ['manarola.jpg', 'trevi.jpg', 'toscani_1.jpg', 'vernazza.jpg']
+images         = ['manarola.jpg', 'toscani_1.jpg', 'vernazza.jpg']
 selectedGender = ""
 simulateLoad   = ""
 nextImage      = ""
