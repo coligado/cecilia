@@ -1,10 +1,8 @@
-images         = ['manarola.jpg', 'toscani_1.jpg', 'vernazza.jpg']
 selectedGender = ""
 simulateLoad   = ""
 nextImage      = ""
 
 $ ->
-  refreshWallpaper()
 
   $(".shadow_box, .shadow_box_window").on "click", (e) ->
     $currTarget = $(e.currentTarget)
@@ -19,11 +17,6 @@ $ ->
   $('#dai_button').click ->
     $('#dai_button').attr 'disabled', true
     searchName()
-
-
-refreshWallpaper = ->
-  nextImage = images[Math.floor(Math.random() * images.length)]
-  $('body').css 'backgroundImage', "url(assets/"+nextImage+")"
 
 
 searchName = ->
@@ -59,7 +52,6 @@ closeNameBox = ->
   $('html, body').removeClass "prevent_scroll"
   $('.loading').hide()
   clearSearch()
-  refreshWallpaper()
 
 
 clearSearch = ->

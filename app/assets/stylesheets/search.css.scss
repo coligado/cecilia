@@ -1,6 +1,10 @@
 @import 'mixin';
 @import 'variables';
 
+.index_body {
+  background-image: url(assets/manarola.jpg);
+}
+
 .main_title {
   text-align: center;
   font-size : 48px;
