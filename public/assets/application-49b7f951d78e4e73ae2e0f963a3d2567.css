@@ -1,0 +1,469 @@
+/* line 1, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_body {
+  background-image: url(toscani_1.jpg);
+}
+
+/* line 5, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_header {
+  margin: 40px auto 60px auto;
+}
+
+/* line 9, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.stretchy_wrapper, .about_1_stretchy_wrapper, .about_2_stretchy_wrapper, .about_3_stretchy_wrapper {
+  position: relative;
+  width: 80%;
+  margin: 100px auto;
+}
+
+/* line 15, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_1_stretchy_wrapper {
+  margin: 0 auto 80px auto;
+  padding-bottom: 26%;
+}
+
+/* line 21, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_2_stretchy_wrapper {
+  padding-bottom: 32%;
+}
+
+/* line 26, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_3_stretchy_wrapper {
+  padding-bottom: 75%;
+}
+
+/* line 31, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.forcellami_stretchy_wrapper {
+  position: relative;
+  width: 25%;
+  margin: 0 auto;
+  padding-bottom: 15%;
+}
+
+/* line 38, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_img, .about_1, .about_2, .about_3, .forcellami {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 43, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_1 {
+  background-image: url("about_1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 50, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_2 {
+  background: url("about_2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 57, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.about_3 {
+  background: url("about_3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 64, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/about.css.scss */
+.forcellami {
+  background: url("forcellami.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 3, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/errors.css.scss */
+.errors {
+  text-align: center;
+  font-size: 34px;
+  margin: 2% auto 0 auto;
+}
+
+/* line 9, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/errors.css.scss */
+.error_en {
+  font-family: Georgia, Arial, sans-serif;
+}
+
+/* line 13, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/errors.css.scss */
+.error_it {
+  font-family: "Pacifico", cursive;
+}
+/* line 3, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/footer.css.scss */
+.footer {
+  position: absolute;
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  height: 40px;
+  clear: both;
+  bottom: 0;
+}
+
+/* line 14, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/footer.css.scss */
+.copyright {
+  padding: 0 5px;
+  float: left;
+}
+/* line 4, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  cursor: default;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 18, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+h1 {
+  text-align: center;
+}
+
+/* line 22, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 31, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* line 32, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* line 33, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* line 34, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* line 36, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+form {
+  width: 100%;
+}
+
+/* line 40, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+label {
+  padding: 0 5px 0 0;
+}
+
+/* line 44, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+input[type="text"] {
+  font-family: Georgia, Arial, sans-serif;
+}
+
+/* line 48, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+input[type="radio"] {
+  padding: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* line 56, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 60, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/global.css.scss */
+a {
+  text-decoration: none;
+}
+/* line 3, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/header.css.scss */
+.header_bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 42px;
+  width: 100%;
+  clear: both;
+}
+
+/* line 10, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/header.css.scss */
+.header_links {
+  width: 180px;
+  float: right;
+  font-size: 24px;
+}
+
+/* line 16, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/header.css.scss */
+.hdr_link {
+  display: inline-block;
+  color: white;
+  padding: 0 10px;
+}
+/* line 4, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+.shadow_box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 11, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+.shadow_box_window {
+  display: table;
+  background-color: #FFFFFF;
+  width: 55%;
+  height: 320px;
+  margin: 140px auto 0 auto;
+  border-width: 5px;
+  border-style: solid;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(38, 34, 31, 0.3);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(38, 34, 31, 0.3);
+  box-shadow: 0px 2px 3px 0px rgba(38, 34, 31, 0.3);
+}
+@media (max-device-width: 400px) {
+  /* line 11, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+  .shadow_box_window {
+    width: 80%;
+    height: 400px;
+    margin: 200px auto;
+  }
+}
+
+/* line 32, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+.results {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 37, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+.loading {
+  font-size: 32px;
+  text-align: center;
+  margin: 12% auto;
+  cursor: default;
+}
+@media (max-device-width: 400px) {
+  /* line 37, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+  .loading {
+    margin: 20% auto;
+  }
+}
+
+/* line 48, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+.loading_gif {
+  background: url("/assets/loading.gif") no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+/* line 55, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+.lightbox_header {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin: 30px auto 20px auto;
+  cursor: default;
+}
+
+/* line 63, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+.hide {
+  display: none;
+}
+
+/* line 67, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/name_box.css.scss */
+.prevent_scroll {
+  overflow: hidden;
+}
+/* line 1, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/results.css.scss */
+.come_va {
+  text-align: center;
+  font-size: 36px;
+}
+
+/* line 6, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/results.css.scss */
+.italian_name {
+  text-align: center;
+  font-size: 56px;
+}
+/* line 4, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.index_body {
+  background-image: url(manarola.jpg);
+}
+
+/* line 8, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.main_title {
+  text-align: center;
+  font-size: 48px;
+  color: black;
+  margin: -14px auto;
+}
+@media (max-device-width: 400px) {
+  /* line 8, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+  .main_title {
+    font-size: 56px;
+  }
+}
+
+/* line 19, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.subtitle {
+  font-size: 30px;
+  text-align: center;
+}
+@media (max-device-width: 400px) {
+  /* line 19, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+  .subtitle {
+    font-size: 36px;
+  }
+}
+
+/* line 28, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.search_background {
+  width: 640px;
+  height: 310px;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: black;
+  border-style: solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+@media (max-device-width: 400px) {
+  /* line 28, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+  .search_background {
+    width: 80%;
+    height: 380px;
+    margin: 200px auto;
+  }
+}
+
+/* line 47, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.search_content {
+  margin: 15px auto;
+}
+
+/* line 51, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.italianize_name {
+  width: 100%;
+}
+
+/* line 55, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.select_gender {
+  font-family: Georgia, Arial, sans-serif;
+  font-size: 25px;
+  width: 73%;
+  margin: 12px auto;
+}
+@media (max-device-width: 400px) {
+  /* line 55, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+  .select_gender {
+    width: 65%;
+  }
+}
+
+/* line 66, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.name_search_bar {
+  font-family: Georgia, Arial, sans-serif;
+  font-size: 24px;
+  width: 90%;
+  height: 48px;
+  margin: 12px auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+@media (max-device-width: 400px) {
+  /* line 66, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+  .name_search_bar {
+    margin: 30px auto;
+    width: 90%;
+  }
+}
+
+/* line 82, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.name_box {
+  width: 47%;
+  height: 100%;
+  font-size: 24px;
+  color: dark_gray;
+  text-align: center;
+  background-color: white;
+  border-color: gray;
+  border-style: solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 95, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.name_box:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(255, 165, 0, 0.8);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(255, 165, 0, 0.8);
+  box-shadow: 0px 0px 2pt 2pt rgba(255, 165, 0, 0.8);
+}
+@media (max-device-width: 400px) {
+  /* line 82, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+  .name_box {
+    width: 45%;
+  }
+}
+
+/* line 107, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.search_button {
+  width: 30%;
+  height: 48px;
+  background-color: orange;
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  color: white;
+  margin-left: 33%;
+  line-height: 48px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.4);
+}
+/* line 127, /Users/leacoligado/Desktop/cecilia/app/assets/stylesheets/search.css.scss */
+.search_button:active {
+  background-color: #e59400;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
