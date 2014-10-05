@@ -1,3 +1,4 @@
+images         = ['manarola.jpg', 'toscani_1.jpg']
 selectedGender = ""
 simulateLoad   = ""
 nextImage      = ""
@@ -17,6 +18,11 @@ $ ->
   $('#dai_button').click ->
     $('#dai_button').attr 'disabled', true
     searchName()
+
+
+refreshWallpaper = ->
+  nextImage = images[Math.floor(Math.random() * images.length)]
+  $('body').css 'backgroundImage', "url(assets/"+nextImage+")"
 
 
 searchName = ->
