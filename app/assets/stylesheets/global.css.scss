@@ -6,7 +6,6 @@ body {
   margin                  : 0;
   font-family             : $pac;
   cursor                  : default;
-  background-image        : url(manarola.jpg);
   background-repeat       : no-repeat;
   background-attachment   : fixed;
   background-position     : center center; 
@@ -14,10 +13,6 @@ body {
   -moz-background-size    : cover;
   -o-background-size      : cover;
   background-size         : cover;
-
-  @include mobile_breakpoint(400px) {
-    background-image      : url(vernazza.jpg);
-  }
 }
 
 h1 {
